@@ -25,11 +25,10 @@
        "js": [
         "scripts/contentscript.js"
       ],
-      "run_at": "document_end",
+      "run_at": "document_idle",
       "all_frames": false
     }
   ],
-
   "page_action": {
     "default_icon": {
       "19": "images/icon-19.png",
