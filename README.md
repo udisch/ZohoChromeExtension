@@ -12,7 +12,7 @@ In order to generate the script files run (converts ES2015 syntax):
 gulp babel
 
 Note the files in the scripts folder will be overwritten!
-Only edit the scripts under `scripts.babel`
+Only edit the scripts under /scripts.babel
 
 Build:
 gulp build
