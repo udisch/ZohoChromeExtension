@@ -1,10 +1,10 @@
 'use strict';
 
-chrome.runtime.onInstalled.addListener(function (details) {
+chrome.runtime.onInstalled.addListener((details) => {
   console.log('previousVersion', details.previousVersion);
 
   // Replace all rules 
-    chrome.declarativeContent.onPageChanged.removeRules(undefined, function() {
+    chrome.declarativeContent.onPageChanged.removeRules(undefined, () => {
     // With a new rule
     chrome.declarativeContent.onPageChanged.addRules([
       {
@@ -30,6 +30,6 @@ function copyToClipboard(msg) {
   document.body.removeChild(copyFrom);
 }
 
-chrome.pageAction.onClicked.addListener(function(tab) {
+chrome.pageAction.onClicked.addListener((tab) => {
 	chrome.tabs.sendMessage(tab.id, {}, copyToClipboard);
 });
