@@ -19,14 +19,14 @@
   "content_scripts": [
     {
       "matches": [
-        "http://*/*",
-        "https://*/*"
+        "http://crm.zoho.com/*",
+        "https://crm.zoho.com/*"
       ],
        "js": [
         "scripts/contentscript.js"
       ],
-      "run_at": "document_idle",
-      "all_frames": false
+      "run_at": "document_end",
+      "all_frames": true
     }
   ],
   "page_action": {
