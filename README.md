@@ -1,5 +1,5 @@
 A Chrome extension intended for use in Zoho CRM.
-Clicking the icon while viewing a customer will copy a specific field to the clipboard.
+Clicking the icon while viewing an account/customer will copy a specific field to the clipboard.
 
 Generated using [Yeoman](https://github.com/yeoman/generator-chrome-extension)
 
